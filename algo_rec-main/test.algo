@@ -1,0 +1,18 @@
+FUNCTION palindrom(ch:STRING) : BOOLEAN
+VAR
+  
+BEGIN
+  i=0
+  j=ch.length
+  if(i==j)then
+  RETURN true ;
+  ELSE
+IF (ch[i]==ch[j]) then
+RETURN palindrom(ch)
+   i:=i+1
+   j:=j-1
+
+  ELSE
+  RETURN false
+END_IF
+END
